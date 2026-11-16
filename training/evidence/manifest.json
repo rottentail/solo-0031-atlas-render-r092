@@ -1,0 +1,639 @@
+{
+  "01-onboard": {
+    "put-asset-a-201": {
+      "id": "asset-a",
+      "digest": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+      "state": "available",
+      "width": 16,
+      "height": 16,
+      "png": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARUlEQVR42mP4DwUiUQVkYYb/SIAsA0AEJYYwwBjkGsKAzCHHEAZ0AVINYcAmSIohDLgkiDWEAZ8kCDAQAgSdOGrAEDAAAEYcmLhDmmaWAAAAAElFTkSuQmCC"
+    },
+    "put-bad-bytes-400": {
+      "code": "invalid",
+      "error": "invalid PNG: png: invalid format: not a PNG file"
+    },
+    "put-same-bytes-idempotent-201": {
+      "id": "asset-a",
+      "digest": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+      "state": "available",
+      "width": 16,
+      "height": 16,
+      "png": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARUlEQVR42mP4DwUiUQVkYYb/SIAsA0AEJYYwwBjkGsKAzCHHEAZ0AVINYcAmSIohDLgkiDWEAZ8kCDAQAgSdOGrAEDAAAEYcmLhDmmaWAAAAAElFTkSuQmCC"
+    },
+    "put-different-bytes-409": {
+      "code": "conflict",
+      "error": "asset id already exists"
+    },
+    "sourceAssetSha256": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+    "put-scene-emblem-rev1": {
+      "id": "emblem",
+      "name": "退役训练-印记",
+      "revision": 1,
+      "state": "active",
+      "document": {
+        "width": 320,
+        "height": 240,
+        "background": "#F5F1E8",
+        "layers": [
+          {
+            "id": "plate",
+            "kind": "rectangle",
+            "width": 220,
+            "height": 150,
+            "transform": {
+              "x": 45,
+              "y": 35,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 5
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "linear",
+              "color": "#145A70",
+              "endColor": "#32A5A0",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 220,
+                "y": 150
+              }
+            }
+          },
+          {
+            "id": "accent",
+            "kind": "ellipse",
+            "width": 110,
+            "height": 110,
+            "transform": {
+              "x": 175,
+              "y": 95,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 0.85,
+            "fill": {
+              "kind": "solid",
+              "color": "#E87E4F",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          },
+          {
+            "id": "stamp",
+            "kind": "image",
+            "width": 96,
+            "height": 96,
+            "transform": {
+              "x": 24,
+              "y": 120,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "",
+              "color": "",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "assetId": "asset-a"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-16T07:32:28.909456554Z"
+    },
+    "scene-references-missing-asset-409": {
+      "code": "conflict",
+      "error": "scene references unavailable asset"
+    }
+  },
+  "02-freeze": {
+    "snapshot-snap1-201": {
+      "id": "snap-00000003",
+      "sceneId": "emblem",
+      "revision": 1,
+      "state": "active",
+      "document": {
+        "width": 320,
+        "height": 240,
+        "background": "#F5F1E8",
+        "layers": [
+          {
+            "id": "plate",
+            "kind": "rectangle",
+            "width": 220,
+            "height": 150,
+            "transform": {
+              "x": 45,
+              "y": 35,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 5
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "linear",
+              "color": "#145A70",
+              "endColor": "#32A5A0",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 220,
+                "y": 150
+              }
+            }
+          },
+          {
+            "id": "accent",
+            "kind": "ellipse",
+            "width": 110,
+            "height": 110,
+            "transform": {
+              "x": 175,
+              "y": 95,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 0.85,
+            "fill": {
+              "kind": "solid",
+              "color": "#E87E4F",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          },
+          {
+            "id": "stamp",
+            "kind": "image",
+            "width": 96,
+            "height": 96,
+            "transform": {
+              "x": 24,
+              "y": 120,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "",
+              "color": "",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "assetId": "asset-a"
+          }
+        ]
+      },
+      "digest": "f4802cc460682c8041fe1ae0682d11b2f3ccf0a7ffd89292575294d6432086de",
+      "createdAt": "2026-11-16T07:32:28.912805245Z"
+    },
+    "snap1-closed-asset-meta": {
+      "assetId": "asset-a",
+      "digest": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+      "stateInsideSnapshot": "available",
+      "pngBytes": 168,
+      "pngSha256": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d"
+    },
+    "scene-revised-to-rev2": {
+      "id": "emblem",
+      "name": "退役训练-印记",
+      "revision": 2,
+      "state": "active",
+      "document": {
+        "width": 320,
+        "height": 240,
+        "background": "#0E2A38",
+        "layers": [
+          {
+            "id": "plate",
+            "kind": "rectangle",
+            "width": 220,
+            "height": 150,
+            "transform": {
+              "x": 45,
+              "y": 35,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 5
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "linear",
+              "color": "#145A70",
+              "endColor": "#32A5A0",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 220,
+                "y": 150
+              }
+            }
+          },
+          {
+            "id": "accent",
+            "kind": "ellipse",
+            "width": 110,
+            "height": 110,
+            "transform": {
+              "x": 175,
+              "y": 95,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 0.85,
+            "fill": {
+              "kind": "solid",
+              "color": "#E87E4F",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          },
+          {
+            "id": "stamp",
+            "kind": "image",
+            "width": 96,
+            "height": 96,
+            "transform": {
+              "x": 24,
+              "y": 120,
+              "scaleX": 1,
+              "scaleY": 1,
+              "degrees": 0
+            },
+            "opacity": 1,
+            "fill": {
+              "kind": "",
+              "color": "",
+              "from": {
+                "x": 0,
+                "y": 0
+              },
+              "to": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "assetId": "asset-a"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-16T07:32:28.915472981Z"
+    },
+    "snap1-digest-unchanged-after-revise": {
+      "snapshotId": "snap-00000003",
+      "digest": "f4802cc460682c8041fe1ae0682d11b2f3ccf0a7ffd89292575294d6432086de",
+      "documentBackgroundInsideSnapshot": "#F5F1E8"
+    },
+    "baseline-render-job": {
+      "jobId": "job-00000005",
+      "artifactId": "png-00000007",
+      "state": "succeeded",
+      "attempt": 1,
+      "pngBytes": 6397,
+      "pngSha256": "3583e97c31e961ae2fdceba69ac941fac9d172efb8baea1b0c909e598ae23bcf"
+    }
+  },
+  "03-retire": {
+    "rule": "retire 只翻转 state，不提供删除/替换 API"
+  },
+  "04-refreeze-fail": {
+    "refreeze-after-retire-409": {
+      "code": "conflict",
+      "error": "snapshot references unavailable asset"
+    },
+    "save-revision-referencing-retired-409": {
+      "code": "conflict",
+      "error": "scene references unavailable asset"
+    },
+    "render-from-old-snapshot-job": {
+      "jobId": "job-00000009",
+      "artifactId": "png-00000011",
+      "pngBytes": 6397,
+      "pngSha256": "3583e97c31e961ae2fdceba69ac941fac9d172efb8baea1b0c909e598ae23bcf"
+    },
+    "compare-baseline-vs-after-retire": {
+      "width": 320,
+      "height": 240,
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "meanDelta": 0
+    },
+    "revoke-snap1": {
+      "state": "revoked"
+    },
+    "new-job-on-revoked-409": {
+      "code": "conflict",
+      "error": "snapshot is revoked"
+    },
+    "idempotent-replay-returns-original-job": {
+      "returnedJobId": "job-00000005",
+      "originalJobId": "job-00000005"
+    }
+  },
+  "04b-purge": {
+    "status-before-purge": {
+      "artifactBytes": 12794,
+      "assetCount": 1,
+      "jobs": {
+        "succeeded": 2
+      },
+      "sceneCount": 1,
+      "sequence": 12,
+      "snapshotCount": 1
+    },
+    "purge-artifact-response": {
+      "state": "purged"
+    },
+    "status-after-purge": {
+      "artifactBytes": 6397,
+      "assetCount": 1,
+      "jobs": {
+        "succeeded": 2
+      },
+      "sceneCount": 1,
+      "sequence": 13,
+      "snapshotCount": 1
+    },
+    "artifact-bytes-released": {
+      "artifactBytesBefore": 12794,
+      "artifactBytesAfter": 6397,
+      "released": 6397
+    },
+    "get-purged-artifact-410": {
+      "code": "gone",
+      "error": "artifact png-00000007 was purged"
+    },
+    "job-still-succeeded-after-purge": {
+      "jobId": "job-00000005",
+      "state": "succeeded",
+      "artifactId": "png-00000007"
+    },
+    "asset-untouched-by-purge": {
+      "assetId": "asset-a",
+      "state": "retired",
+      "pngBytesStillPresent": 126
+    }
+  },
+  "05-cross-instance": {
+    "instance-b-status-before": {
+      "artifactBytes": 0,
+      "assetCount": 0,
+      "jobs": {},
+      "sceneCount": 0,
+      "sequence": 0,
+      "snapshotCount": 0
+    },
+    "exported-package-meta": {
+      "format": "atlas-scene",
+      "version": 1,
+      "packageDigest": "6c2d26758d049a187761a3502a9fee8dd33d45995955941f6f28210da0e88ba7",
+      "snapshotId": "snap-00000003",
+      "snapshotStateInsidePackage": "revoked",
+      "embeddedAssetDigests": {
+        "asset-a": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d"
+      }
+    },
+    "package-embedded-png-vs-source": {
+      "sourceSha256": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+      "packageEmbeddedSha256": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+      "byteIdentical": true
+    },
+    "import-on-clean-instance-201": {
+      "id": "emblem-copy",
+      "revision": 1,
+      "state": "active",
+      "documentEqual": true
+    },
+    "instance-b-status-after-import": {
+      "artifactBytes": 0,
+      "assetCount": 1,
+      "jobs": {},
+      "sceneCount": 1,
+      "sequence": 1,
+      "snapshotCount": 0
+    },
+    "tampered-package-checksum-400": {
+      "code": "invalid",
+      "error": "package checksum mismatch"
+    },
+    "repackaged-conflict-digest": {
+      "digest": "10dcee625d1597a328f0fcaab4bb621319a8b583bea423276c95b9b3cc43eaf3"
+    },
+    "same-id-different-content-import-409": {
+      "code": "conflict",
+      "error": "destination asset conflicts with package"
+    },
+    "conflict-scene-not-created-404": {
+      "note": "整笔事务失败，目标场景不存在"
+    },
+    "retired-asset-import-409": {
+      "code": "conflict",
+      "error": "destination asset conflicts with package"
+    },
+    "freeze-on-instance-b": {
+      "snapshotId": "snap-00000004",
+      "digest": "f4802cc460682c8041fe1ae0682d11b2f3ccf0a7ffd89292575294d6432086de",
+      "digestMatchesInstanceA": true
+    },
+    "render-on-instance-b": {
+      "jobId": "job-00000005",
+      "artifactId": "png-00000007",
+      "pngBytes": 6397,
+      "pngSha256": "3583e97c31e961ae2fdceba69ac941fac9d172efb8baea1b0c909e598ae23bcf",
+      "identicalToInstanceABaseline": true
+    },
+    "instance-a-events-tail": [
+      {
+        "sequence": 2,
+        "kind": "scene.saved",
+        "subject": "emblem",
+        "at": "2026-11-16T07:32:28.909457137Z"
+      },
+      {
+        "sequence": 3,
+        "kind": "snapshot.frozen",
+        "subject": "snap-00000003",
+        "at": "2026-11-16T07:32:28.912829872Z"
+      },
+      {
+        "sequence": 4,
+        "kind": "scene.saved",
+        "subject": "emblem",
+        "at": "2026-11-16T07:32:28.915473231Z"
+      },
+      {
+        "sequence": 5,
+        "kind": "job.queued",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:28.918865384Z"
+      },
+      {
+        "sequence": 6,
+        "kind": "job.running",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:28.954445672Z"
+      },
+      {
+        "sequence": 7,
+        "kind": "job.succeeded",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:28.963606738Z"
+      },
+      {
+        "sequence": 8,
+        "kind": "asset.retired",
+        "subject": "asset-a",
+        "at": "2026-11-16T07:32:28.973908161Z"
+      },
+      {
+        "sequence": 9,
+        "kind": "job.queued",
+        "subject": "job-00000009",
+        "at": "2026-11-16T07:32:28.979167879Z"
+      },
+      {
+        "sequence": 10,
+        "kind": "job.running",
+        "subject": "job-00000009",
+        "at": "2026-11-16T07:32:29.001948809Z"
+      },
+      {
+        "sequence": 11,
+        "kind": "job.succeeded",
+        "subject": "job-00000009",
+        "at": "2026-11-16T07:32:29.020772637Z"
+      },
+      {
+        "sequence": 12,
+        "kind": "snapshot.revoked",
+        "subject": "snap-00000003",
+        "at": "2026-11-16T07:32:29.044766469Z"
+      },
+      {
+        "sequence": 13,
+        "kind": "artifact.purged",
+        "subject": "png-00000007",
+        "at": "2026-11-16T07:32:29.052237647Z"
+      }
+    ],
+    "instance-b-events-tail": [
+      {
+        "sequence": 1,
+        "kind": "scene.imported",
+        "subject": "emblem-copy",
+        "at": "2026-11-16T07:32:29.060691756Z"
+      },
+      {
+        "sequence": 2,
+        "kind": "asset.imported",
+        "subject": "asset-b",
+        "at": "2026-11-16T07:32:29.06316844Z"
+      },
+      {
+        "sequence": 3,
+        "kind": "asset.retired",
+        "subject": "asset-b",
+        "at": "2026-11-16T07:32:29.07315872Z"
+      },
+      {
+        "sequence": 4,
+        "kind": "snapshot.frozen",
+        "subject": "snap-00000004",
+        "at": "2026-11-16T07:32:29.077805195Z"
+      },
+      {
+        "sequence": 5,
+        "kind": "job.queued",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:29.080232959Z"
+      },
+      {
+        "sequence": 6,
+        "kind": "job.running",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:29.102613657Z"
+      },
+      {
+        "sequence": 7,
+        "kind": "job.succeeded",
+        "subject": "job-00000005",
+        "at": "2026-11-16T07:32:29.118804417Z"
+      }
+    ],
+    "instance-a-final-status": {
+      "artifactBytes": 6397,
+      "assetCount": 1,
+      "jobs": {
+        "succeeded": 2
+      },
+      "sceneCount": 1,
+      "sequence": 13,
+      "snapshotCount": 1
+    },
+    "instance-b-final-status": {
+      "artifactBytes": 6397,
+      "assetCount": 2,
+      "jobs": {
+        "succeeded": 1
+      },
+      "sceneCount": 1,
+      "sequence": 7,
+      "snapshotCount": 1
+    }
+  },
+  "meta": {
+    "generatedAtUtc": "2026-11-16T07:32:29Z",
+    "sourceAssets": {
+      "asset-a.png": {
+        "sha256": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d",
+        "bytes": 126
+      },
+      "asset-b.png": {
+        "sha256": "798c47620e8c4f1d1407c9234be00a392b54ca804324e59b49a9e6e204eb8d26",
+        "bytes": 156
+      }
+    }
+  }
+}

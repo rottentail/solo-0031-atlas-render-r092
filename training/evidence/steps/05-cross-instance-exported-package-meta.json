@@ -1,0 +1,10 @@
+{
+  "format": "atlas-scene",
+  "version": 1,
+  "packageDigest": "6c2d26758d049a187761a3502a9fee8dd33d45995955941f6f28210da0e88ba7",
+  "snapshotId": "snap-00000003",
+  "snapshotStateInsidePackage": "revoked",
+  "embeddedAssetDigests": {
+    "asset-a": "fce5d44a93777695889c03941c61d7517cce82a1dc766bb2734bd2b353fe3c2d"
+  }
+}

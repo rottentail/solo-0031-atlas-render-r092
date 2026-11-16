@@ -1,0 +1,94 @@
+{
+  "id": "emblem",
+  "name": "退役训练-印记",
+  "revision": 2,
+  "state": "active",
+  "document": {
+    "width": 320,
+    "height": 240,
+    "background": "#0E2A38",
+    "layers": [
+      {
+        "id": "plate",
+        "kind": "rectangle",
+        "width": 220,
+        "height": 150,
+        "transform": {
+          "x": 45,
+          "y": 35,
+          "scaleX": 1,
+          "scaleY": 1,
+          "degrees": 5
+        },
+        "opacity": 1,
+        "fill": {
+          "kind": "linear",
+          "color": "#145A70",
+          "endColor": "#32A5A0",
+          "from": {
+            "x": 0,
+            "y": 0
+          },
+          "to": {
+            "x": 220,
+            "y": 150
+          }
+        }
+      },
+      {
+        "id": "accent",
+        "kind": "ellipse",
+        "width": 110,
+        "height": 110,
+        "transform": {
+          "x": 175,
+          "y": 95,
+          "scaleX": 1,
+          "scaleY": 1,
+          "degrees": 0
+        },
+        "opacity": 0.85,
+        "fill": {
+          "kind": "solid",
+          "color": "#E87E4F",
+          "from": {
+            "x": 0,
+            "y": 0
+          },
+          "to": {
+            "x": 0,
+            "y": 0
+          }
+        }
+      },
+      {
+        "id": "stamp",
+        "kind": "image",
+        "width": 96,
+        "height": 96,
+        "transform": {
+          "x": 24,
+          "y": 120,
+          "scaleX": 1,
+          "scaleY": 1,
+          "degrees": 0
+        },
+        "opacity": 1,
+        "fill": {
+          "kind": "",
+          "color": "",
+          "from": {
+            "x": 0,
+            "y": 0
+          },
+          "to": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "assetId": "asset-a"
+      }
+    ]
+  },
+  "updatedAt": "2026-11-16T07:32:28.915472981Z"
+}

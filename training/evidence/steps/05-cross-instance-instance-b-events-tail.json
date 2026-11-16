@@ -1,0 +1,44 @@
+[
+  {
+    "sequence": 1,
+    "kind": "scene.imported",
+    "subject": "emblem-copy",
+    "at": "2026-11-16T07:32:29.060691756Z"
+  },
+  {
+    "sequence": 2,
+    "kind": "asset.imported",
+    "subject": "asset-b",
+    "at": "2026-11-16T07:32:29.06316844Z"
+  },
+  {
+    "sequence": 3,
+    "kind": "asset.retired",
+    "subject": "asset-b",
+    "at": "2026-11-16T07:32:29.07315872Z"
+  },
+  {
+    "sequence": 4,
+    "kind": "snapshot.frozen",
+    "subject": "snap-00000004",
+    "at": "2026-11-16T07:32:29.077805195Z"
+  },
+  {
+    "sequence": 5,
+    "kind": "job.queued",
+    "subject": "job-00000005",
+    "at": "2026-11-16T07:32:29.080232959Z"
+  },
+  {
+    "sequence": 6,
+    "kind": "job.running",
+    "subject": "job-00000005",
+    "at": "2026-11-16T07:32:29.102613657Z"
+  },
+  {
+    "sequence": 7,
+    "kind": "job.succeeded",
+    "subject": "job-00000005",
+    "at": "2026-11-16T07:32:29.118804417Z"
+  }
+]

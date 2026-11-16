@@ -1,0 +1,8 @@
+{
+  "jobId": "job-00000005",
+  "artifactId": "png-00000007",
+  "state": "succeeded",
+  "attempt": 1,
+  "pngBytes": 6397,
+  "pngSha256": "3583e97c31e961ae2fdceba69ac941fac9d172efb8baea1b0c909e598ae23bcf"
+}
